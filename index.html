@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101318">
+  <meta name="description" content="PULSO WEB: revista digital de diez páginas sobre HTML5, CSS, selectores, declaraciones, section, hgroup, posicionamiento y JavaScript. Proyecto académico de Luis Flores.">
+  <title>PULSO WEB — Revista digital | Luis Flores</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="revista.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#revista">Saltar a la revista</a>
+<div class="reader">
+  <header class="toolbar" aria-label="Barra de lectura">
+    <a class="brand" href="#pagina-01" aria-label="Volver a la portada"><span class="brand-mark" aria-hidden="true">P<span>⁄</span>W</span><span class="brand-copy">PULSO<span>WEB</span><small>EDICIÓN DIGITAL / 2026</small></span></a>
+    <nav class="reader-actions" aria-label="Controles de páginas">
+      <button class="btn btn-outline" id="prev" type="button" aria-label="Página anterior"><span aria-hidden="true">←</span><span class="btn-label"> Anterior</span></button>
+      <span id="page-counter" class="counter" aria-live="polite">01 <span>/ 10</span></span>
+      <button class="btn btn-strong" id="next" type="button"><span class="btn-label">Siguiente </span><span aria-hidden="true">→</span></button>
+    </nav>
+    <button class="btn btn-print" id="print-btn" type="button" title="Imprimir las diez páginas">Imprimir revista <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main id="revista" aria-label="Revista PULSO WEB, diez páginas">
+    <!-- 01 · PORTADA -->
+    <article class="sheet cover active" id="pagina-01" data-title="Portada" aria-label="Página 1: Portada">
+      <div class="cover-orbit" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit orbit-three"></span><span class="orbit-core">&lt;/&gt;</span><i class="orbit-dot"></i></div>
+      <div class="cover-index"><strong>REVISTA / TECNOLOGÍA WEB</strong><span>Nº 03 — NOVIEMBRE 2026</span></div>
+      <div class="cover-main"><p class="eyebrow eyebrow-light">DISEÑO · CÓDIGO · ESTRUCTURA</p><h1>PULSO<span>WEB</span></h1><p class="cover-subtitle">El diseño de internet comienza con una etiqueta.</p><div class="cover-rule"></div><p class="cover-lead">HTML5 + CSS + JavaScript<br>Una mirada práctica al lenguaje que organiza y da forma a la web.</p></div>
+      <div class="cover-bottom"><div><span class="micro-label">EDICIÓN ESPECIAL</span><strong>Arquitectura visual de una página</strong></div><div class="cover-stamp">10 <span>PÁGINAS</span></div><div class="cover-author">Luis Flores · Ing. en Sistemas<br>Universidad Bicentenaria de Aragua</div></div>
+      <span class="cover-vertical" aria-hidden="true">EL FUTURO SE ESCRIBE EN CÓDIGO</span>
+    </article>
+
+    <!-- 02 · EDITORIAL Y DIRECTORIO -->
+    <article class="sheet paper sheet-editorial" id="pagina-02" data-title="Editorial y directorio" aria-label="Página 2: Editorial y directorio" hidden>
+      <header class="sheet-head"><span>02 / NOTA DEL EDITOR</span><span>PULSO WEB · UNIDAD III</span></header>
+      <div class="editorial-layout">
+        <section class="editorial-copy">
+          <p class="eyebrow red">EDITORIAL</p>
+          <h2>Detrás de cada<br><em>pantalla</em> hay<br>una estructura.</h2>
+          <span class="short-red-line" aria-hidden="true"></span>
+          <p>Cuando abro una página web suelo fijarme primero en cómo se ve: los colores, la distribución o la facilidad con la que encuentro lo que busco. Sin embargo, detrás de esa apariencia existe una estructura que hace posible cada elemento.</p>
+          <p>En esta revista decidí presentar los conceptos de HTML y CSS desde una perspectiva práctica: qué función cumple cada etiqueta, cómo se aplica un estilo y por qué el posicionamiento influye en la experiencia del usuario.</p>
+          <p>Mi intención es explicar estos recursos con ejemplos sencillos y mostrar cómo pueden combinarse para diseñar interfaces ordenadas, legibles y adaptables.</p>
+          <div class="editor-signature"><span class="sig-line"></span><strong>Luis Flores</strong><small>Estudiante de Ingeniería en Sistemas</small></div>
+        </section>
+        <aside class="editorial-side" aria-label="Directorio académico">
+          <div class="side-number">III<span>UNIDAD</span></div>
+          <h3>DIRECTORIO<span class="dot">.</span></h3>
+          <dl class="director-list">
+            <div><dt>Publicación</dt><dd>PULSO WEB — revista digital</dd></div>
+            <div><dt>Autor / diseño y programación</dt><dd>Luis Flores</dd></div>
+            <div><dt>Institución</dt><dd>Universidad Bicentenaria de Aragua</dd></div>
+            <div><dt>Programa</dt><dd>Ingeniería en Sistemas</dd></div>
+            <div><dt>Asignatura</dt><dd>Técnicas de Programación Dinámica</dd></div>
+            <div><dt>Facilitador</dt><dd>Ing. Jorge Aguilera</dd></div>
+            <div><dt>Sección</dt><dd>1</dd></div>
+            <div><dt>Edición</dt><dd>Noviembre de 2026</dd></div>
+          </dl>
+          <p class="mini-note">Proyecto académico elaborado con HTML5, hojas de estilo CSS y JavaScript.</p>
+        </aside>
+      </div>
+      <footer class="sheet-foot"><span>EDITORIAL + DIRECTORIO</span><span>02</span></footer>
+    </article>
+
+    <!-- 03 · ÍNDICE -->
+    <article class="sheet paper page-index" id="pagina-03" data-title="Índice" aria-label="Página 3: Índice" hidden>
+      <header class="sheet-head"><span>03 / GUÍA DE LECTURA</span><span>PULSO WEB · NÚMERO 03</span></header>
+      <p class="eyebrow red">ÍNDICE / 10 PÁGINAS</p>
+      <div class="index-grid">
+        <div class="index-title"><h2>Un recorrido<br>por el <em>código</em>.</h2><p>De la estructura al estilo, y del estilo a la interacción.</p><div class="index-graphic" aria-hidden="true"><span>HTML</span><span>CSS</span><span>JS</span><i></i></div></div>
+        <nav class="toc" aria-label="Índice de contenidos">
+          <a href="#pagina-02"><span class="toc-no">02</span><span><strong>Editorial y directorio</strong><small>Presentación de la edición</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-04"><span class="toc-no">04</span><span><strong>Introducción: tres capas de la web</strong><small>HTML, CSS y JavaScript</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-05"><span class="toc-no">05</span><span><strong>Hojas de estilo CSS</strong><small>Reglas, cascada y modelo de caja</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-06"><span class="toc-no">06</span><span><strong>Selectores y declaraciones</strong><small>Cómo apuntar y aplicar estilos</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-07"><span class="toc-no">07</span><span><strong>Section y hgroup</strong><small>Semántica y jerarquía</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-08"><span class="toc-no">08</span><span><strong>Posicionamiento web</strong><small>Flujo, capas y distribución</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-09"><span class="toc-no">09</span><span><strong>JavaScript y conclusiones</strong><small>Una interfaz conectada al servidor</small></span><span class="toc-arrow">↗</span></a>
+          <a href="#pagina-10"><span class="toc-no">10</span><span><strong>Contraportada y créditos</strong><small>Fuentes y cierre de edición</small></span><span class="toc-arrow">↗</span></a>
+        </nav>
+      </div>
+      <div class="index-bottom"><span>LECTURA INTERACTIVA</span><p>Usa las flechas del teclado o los botones «Anterior» y «Siguiente». Selecciona cualquier tema para ir directamente a su página.</p></div>
+      <footer class="sheet-foot"><span>CONTENIDO</span><span>03</span></footer>
+    </article>
+
+    <!-- 04 · INTRODUCCIÓN -->
+    <article class="sheet paper page-intro" id="pagina-04" data-title="Introducción" aria-label="Página 4: Introducción" hidden>
+      <header class="sheet-head"><span>04 / INTRODUCCIÓN</span><span>HTML · CSS · JAVASCRIPT</span></header>
+      <p class="eyebrow red">01 — PUNTO DE PARTIDA</p>
+      <h2>Una página web<br>tiene <em>tres capas</em>.</h2>
+      <div class="intro-layout">
+        <div class="stack-visual" role="img" aria-label="Tres capas: HTML para estructura, CSS para presentación y JavaScript para comportamiento">
+          <div class="stack-layer layer-html"><span class="layer-name">HTML</span><span class="layer-note">Estructura / contenido</span><b>&lt;h1&gt;</b><b>&lt;p&gt;</b><b>&lt;section&gt;</b></div>
+          <div class="stack-layer layer-css"><span class="layer-name">CSS</span><span class="layer-note">Aspecto / distribución</span><b>color</b><b>grid</b><b>font</b></div>
+          <div class="stack-layer layer-js"><span class="layer-name">JS</span><span class="layer-note">Lógica / respuesta</span><b>events()</b><b>fetch()</b></div>
+        </div>
+        <div class="intro-story">
+          <p class="drop-intro"><strong>HTML</strong> define qué elementos existen y cuál es su significado: títulos, párrafos, enlaces, listas y secciones.</p>
+          <p><strong>CSS</strong> controla cómo se presentan esos elementos: colores, tipografía, márgenes, tamaño, posiciones y adaptación a distintas pantallas.</p>
+          <p><strong>JavaScript</strong> agrega comportamiento. En el navegador responde a eventos; en el servidor puede procesar solicitudes y enviar datos mediante HTTP.</p>
+          <div class="insight"><span>IDEA CLAVE</span><p>La estructura y el diseño se complementan, pero cumplen responsabilidades distintas. Separarlos facilita mantener un proyecto.</p></div>
+        </div>
+      </div>
+      <footer class="sheet-foot"><span>INTRODUCCIÓN · BASES DE LA WEB</span><span>04</span></footer>
+    </article>
+
+    <!-- 05 · HOJAS DE ESTILO -->
+    <article class="sheet paper page-style" id="pagina-05" data-title="Hojas de estilo" aria-label="Página 5: Hojas de estilo" hidden>
+      <header class="sheet-head"><span>05 / DESARROLLO</span><span>CAPÍTULO 01 · CSS</span></header>
+      <p class="eyebrow red">HOJAS DE ESTILO</p>
+      <h2>El lenguaje que<br>define la <em>identidad visual</em>.</h2>
+      <div class="style-layout">
+        <section class="style-main">
+          <p>Una hoja de estilo reúne reglas CSS que el navegador aplica a un documento HTML. Puede estar en un archivo externo, dentro de una etiqueta <code>&lt;style&gt;</code> o en un atributo <code>style</code>. Para esta revista elegí un archivo externo porque permite mantener el contenido separado del diseño.</p>
+          <div class="code-shell"><div class="code-title"><span class="three-dots"><i></i><i></i><i></i></span>index.html</div><pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet"
+        href="estilos.css"&gt;
+&lt;/head&gt;</code></pre></div>
+          <div class="mini-columns"><div><strong>01 · Reutilización</strong><p>Una regla puede transformar muchos componentes a la vez.</p></div><div><strong>02 · Consistencia</strong><p>Las variables permiten mantener colores y tamaños.</p></div><div><strong>03 · Adaptación</strong><p>Las media queries ajustan el diseño a cada pantalla.</p></div></div>
+        </section>
+        <aside class="style-side">
+          <p class="mini-caption">ASÍ FUNCIONA EL MODELO DE CAJA</p>
+          <div class="boxmodel"><div class="margin">MARGIN<div class="border-box">BORDER<div class="padding-box">PADDING<div class="content-box">CONTENT</div></div></div></div></div>
+          <p class="side-explain">Cada elemento ocupa espacio según su contenido, el relleno (<code>padding</code>), el borde (<code>border</code>) y el margen (<code>margin</code>).</p>
+          <div class="side-rule"><strong>La cascada</strong><p>Cuando varias reglas compiten, intervienen el origen, la importancia, las capas, la especificidad y el orden de aparición.</p></div>
+        </aside>
+      </div>
+      <footer class="sheet-foot"><span>HOJAS DE ESTILO · CASCADA · MODELO DE CAJA</span><span>05</span></footer>
+    </article>
+
+    <!-- 06 · SELECTORES Y DECLARACIONES -->
+    <article class="sheet paper page-selectors" id="pagina-06" data-title="Selectores y declaraciones" aria-label="Página 6: Selectores y declaraciones" hidden>
+      <header class="sheet-head"><span>06 / DESARROLLO</span><span>CAPÍTULO 02 · REGLAS</span></header>
+      <p class="eyebrow red">SELECTORES + LISTAS DE DECLARACIONES</p>
+      <h2>Primero se <em>selecciona</em>.<br>Luego se define el estilo.</h2>
+      <div class="selector-layout">
+        <section class="selector-left">
+          <p>Un <strong>selector</strong> identifica los elementos HTML que recibirán una regla. Dentro de las llaves se escribe una <strong>lista de declaraciones</strong>; cada declaración combina propiedad y valor, separados por dos puntos y terminados con punto y coma.</p>
+          <div class="code-shell code-large"><div class="code-title"><span class="three-dots"><i></i><i></i><i></i></span>estilos.css</div><pre><code><span class="tok-selector">.tarjeta</span> <span class="tok-brace">{</span>         <span class="tok-comment">/* selector */</span>
+  <span class="tok-prop">color</span>: <span class="tok-value">#fff</span>;
+  <span class="tok-prop">background</span>: <span class="tok-value">#111</span>;
+  <span class="tok-prop">padding</span>: <span class="tok-value">24px</span>;
+<span class="tok-brace">}</span></code></pre></div>
+          <div class="rule-legend"><span><i class="legend-1"></i>Selector</span><span><i class="legend-2"></i>Propiedad</span><span><i class="legend-3"></i>Valor</span></div>
+        </section>
+        <aside class="selector-right">
+          <p class="mini-caption">TRES FORMAS DE SELECCIONAR</p>
+          <div class="selector-examples"><div><code>p</code><strong>Etiqueta</strong><span>Todos los párrafos</span><b>0–0–1</b></div><div><code>.destacado</code><strong>Clase</strong><span>Elementos con esa clase</span><b>0–1–0</b></div><div><code>#principal</code><strong>ID</strong><span>Elemento con ese identificador</span><b>1–0–0</b></div></div>
+          <p class="selector-note">La especificidad compara los pesos de los selectores cuando las declaraciones compiten en la misma condición de cascada. Un ID tiene más peso que una clase; una clase, más que una etiqueta.</p>
+          <div class="practice-bar"><span class="mini-caption">PASA EL CURSOR SOBRE ESTE BOTÓN</span><button class="demo-button" type="button">Soy un :hover <span>↗</span></button><small>La pseudoclase <code>:hover</code> cambia su apariencia con CSS, sin JavaScript.</small></div>
+        </aside>
+      </div>
+      <footer class="sheet-foot"><span>REGLAS CSS · PROPIEDADES Y VALORES</span><span>06</span></footer>
+    </article>
+
+    <!-- 07 · SECTION / HGROUP -->
+    <article class="sheet paper page-semantics" id="pagina-07" data-title="Section y hgroup" aria-label="Página 7: Section y hgroup" hidden>
+      <header class="sheet-head"><span>07 / DESARROLLO</span><span>CAPÍTULO 03 · HTML5</span></header>
+      <p class="eyebrow red">ESTRUCTURA SEMÁNTICA</p>
+      <h2>Etiquetas que<br><em>dan sentido</em> al contenido.</h2>
+      <div class="semantics-layout">
+        <section class="semantics-explain"><div class="semantic-item"><span class="semantic-big">&lt;section&gt;</span><h3>Una parte con un tema propio</h3><p>Agrupa un bloque temático del documento. Normalmente incluye un encabezado que permite identificar de qué trata esa sección.</p></div><div class="semantic-item"><span class="semantic-big">&lt;hgroup&gt;</span><h3>Un título y su texto asociado</h3><p>Reúne un único encabezado de nivel <code>h1</code> a <code>h6</code> y uno o más párrafos para un subtítulo o frase complementaria.</p></div><div class="semantic-tip"><strong>¿Para qué sirve?</strong><p>La semántica facilita entender la estructura, mantener el HTML y comunicar mejor las partes del documento a tecnologías de asistencia.</p></div></section>
+        <div class="semantic-code">
+          <div class="code-shell"><div class="code-title"><span class="three-dots"><i></i><i></i><i></i></span>fragmento-semántico.html</div><pre><code>&lt;section aria-labelledby="titulo-css"&gt;
+  &lt;hgroup&gt;
+    &lt;h2 id="titulo-css"&gt;
+      Hojas de estilo
+    &lt;/h2&gt;
+    &lt;p&gt;Diseño para la web&lt;/p&gt;
+  &lt;/hgroup&gt;
+  &lt;p&gt;Introducción al CSS.&lt;/p&gt;
+&lt;/section&gt;</code></pre></div>
+          <div class="rendered-example"><span>RESULTADO VISIBLE EN EL NAVEGADOR</span><section aria-labelledby="ejemplo-css"><hgroup><h3 id="ejemplo-css">Hojas de estilo</h3><p>Diseño para la web</p></hgroup><p>Introducción al CSS.</p></section></div>
+        </div>
+      </div>
+      <footer class="sheet-foot"><span>HTML5 · SECTION · HGROUP</span><span>07</span></footer>
+    </article>
+
+    <!-- 08 · POSICIONAMIENTO -->
+    <article class="sheet paper page-position" id="pagina-08" data-title="Posicionamiento" aria-label="Página 8: Posicionamiento web" hidden>
+      <header class="sheet-head"><span>08 / DESARROLLO</span><span>CAPÍTULO 04 · DISTRIBUCIÓN</span></header>
+      <p class="eyebrow red">POSICIONAMIENTO DE ELEMENTOS WEB</p>
+      <h2>No basta con existir.<br>Hay que saber <em>dónde estar</em>.</h2>
+      <div class="position-grid">
+        <section class="position-visual" aria-label="Ejemplos visuales de posicionamiento"><div class="canvas-tag">LIENZO / POSICIONES</div><div class="position-canvas"><div class="pos-static">static <span>Flujo normal</span></div><div class="pos-relative">relative <span>Se desplaza, conserva espacio</span></div><div class="pos-absolute">absolute<span>Respecto al contenedor</span></div><div class="pos-fixed">fixed <span>Se fija a la ventana</span></div><div class="pos-sticky">sticky</div></div><p>Representación conceptual de las cinco modalidades de <code>position</code>.</p></section>
+        <div class="position-story"><div><strong>static</strong><p>Posición inicial en el flujo; los desplazamientos no se aplican.</p></div><div><strong>relative</strong><p>Permite mover visualmente un elemento sin perder su espacio original.</p></div><div><strong>absolute</strong><p>Se ubica respecto al ancestro posicionado más cercano y sale del flujo normal.</p></div><div><strong>fixed</strong><p>Permanece anclado a la ventana de visualización, salvo casos especiales.</p></div><div><strong>sticky</strong><p>Se adhiere durante el desplazamiento cuando alcanza un umbral definido.</p></div><div class="position-callout"><strong>Y para organizar columnas…</strong><p><code>display: flex</code> y <code>display: grid</code> resuelven distribuciones completas sin depender de posiciones absolutas.</p></div></div>
+      </div>
+      <footer class="sheet-foot"><span>CSS POSITION · FLEXBOX · GRID</span><span>08</span></footer>
+    </article>
+
+    <!-- 09 · JAVASCRIPT Y CONCLUSIONES -->
+    <article class="sheet paper page-backend" id="pagina-09" data-title="JavaScript y conclusiones" aria-label="Página 9: JavaScript en el servidor y conclusiones" hidden>
+      <header class="sheet-head"><span>09 / APLICACIÓN + CIERRE</span><span>CAPÍTULO 05 · BACKEND</span></header>
+      <p class="eyebrow red">DE LA INTERFAZ A LOS DATOS</p>
+      <h2>El navegador pregunta.<br><em>El servidor responde.</em></h2>
+      <div class="backend-grid">
+        <section class="backend-left"><p>Además de HTML y CSS, una aplicación puede usar JavaScript en el servidor con Node.js. El navegador realiza una petición HTTP y el backend devuelve una respuesta, por ejemplo, en formato JSON. Esta revista puede leerse como sitio estático; el proyecto también incluye un servidor de demostración opcional.</p>
+          <div class="flow-diagram" aria-label="Flujo HTTP desde navegador a servidor y respuesta JSON"><div><b>NAVEGADOR</b><span>Interfaz HTML + CSS</span></div><div class="flow-arrows"><span>GET /api/estado →</span><span>← JSON 200</span></div><div><b>SERVIDOR</b><span>JavaScript · Node.js</span></div></div>
+          <div class="api-block"><span class="mini-caption">PRUEBA OPCIONAL DEL BACKEND</span><button id="api-button" class="api-button" type="button">Consultar /api/estado <span>↗</span></button><p id="api-result" class="api-result" role="status">En el sitio estático, esta opción explica cómo se conectaría una API; con <code>node servidor.js</code> responde un servidor real.</p></div>
+        </section>
+        <aside class="conclusion-block"><p class="eyebrow eyebrow-light">CONCLUSIONES</p><h3>Diseñar también<br>es <em>organizar</em>.</h3><p>Durante la elaboración de esta revista comprendí que HTML y CSS no se limitan a «hacer bonita» una página. Las etiquetas aportan significado, los selectores permiten trabajar con precisión y el posicionamiento ayuda a ordenar la información.</p><p>Considero que la mejor solución combina una estructura clara, estilos reutilizables y una presentación que facilite la lectura. JavaScript complementa ese trabajo cuando es necesario agregar interacción o conectar servicios.</p><strong>Una página bien construida se entiende y se utiliza con facilidad.</strong></aside>
+      </div>
+      <footer class="sheet-foot"><span>JAVASCRIPT · HTTP · CONCLUSIONES</span><span>09</span></footer>
+    </article>
+
+    <!-- 10 · CONTRAPORTADA / CRÉDITOS -->
+    <article class="sheet back-cover" id="pagina-10" data-title="Créditos y contraportada" aria-label="Página 10: Créditos y contraportada" hidden>
+      <header class="sheet-head sheet-head-invert"><span>10 / CONTRAPORTADA</span><span>PULSO WEB · FIN DE EDICIÓN</span></header>
+      <div class="back-grid"><div class="back-feature"><div class="back-square" aria-hidden="true"><span>&lt;</span><span>/</span><span>&gt;</span></div><p class="eyebrow eyebrow-light">IDEA PARA RECORDAR</p><h2>Una buena web<br>no solo se ve.<br><em>Se comprende.</em></h2><span class="backline"></span><p>Diez páginas para conectar estructura, estilo y lógica.</p></div>
+        <aside class="credits"><h3>CRÉDITOS</h3><p><strong>Autor, redacción, diseño y maquetación</strong><br>Luis Flores</p><p><strong>Asignatura y docente</strong><br>Técnicas de Programación Dinámica · Ing. Jorge Aguilera</p><p><strong>Institución</strong><br>Universidad Bicentenaria de Aragua · Ingeniería en Sistemas</p><p><strong>Tecnologías utilizadas</strong><br>HTML5, CSS3, JavaScript y Node.js (servidor opcional)</p><h4>REFERENCIAS TÉCNICAS</h4><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors" target="_blank" rel="noopener noreferrer">MDN · Selectores CSS</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity" target="_blank" rel="noopener noreferrer">MDN · Especificidad</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hgroup" target="_blank" rel="noopener noreferrer">MDN · Elemento hgroup</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position" target="_blank" rel="noopener noreferrer">MDN · Position</a></li></ul><p class="credits-small">Las ilustraciones, diagramas y ejemplos de esta edición fueron elaborados para este proyecto académico. No se utilizaron imágenes externas.</p></aside></div>
+      <footer class="sheet-foot sheet-foot-invert"><span>UNA PUBLICACIÓN DIGITAL ORIGINAL</span><span>10</span></footer>
+    </article>
+  </main>
+  <div class="reader-bottom"><div class="chapter-nav" role="navigation" aria-label="Seleccionar página de la revista"><button data-page="1" class="chapter-btn current" type="button" title="Portada" aria-label="Ir a página 1">01</button><button data-page="2" class="chapter-btn" type="button" title="Editorial y directorio" aria-label="Ir a página 2">02</button><button data-page="3" class="chapter-btn" type="button" title="Índice" aria-label="Ir a página 3">03</button><button data-page="4" class="chapter-btn" type="button" title="Introducción" aria-label="Ir a página 4">04</button><button data-page="5" class="chapter-btn" type="button" title="Hojas de estilo" aria-label="Ir a página 5">05</button><button data-page="6" class="chapter-btn" type="button" title="Selectores y declaraciones" aria-label="Ir a página 6">06</button><button data-page="7" class="chapter-btn" type="button" title="Section y hgroup" aria-label="Ir a página 7">07</button><button data-page="8" class="chapter-btn" type="button" title="Posicionamiento" aria-label="Ir a página 8">08</button><button data-page="9" class="chapter-btn" type="button" title="JavaScript y conclusiones" aria-label="Ir a página 9">09</button><button data-page="10" class="chapter-btn" type="button" title="Contraportada" aria-label="Ir a página 10">10</button></div><p>Revista académica · Unidad III · <span id="chapter-caption">Portada</span></p></div>
+</div>
+<noscript><p class="no-js">Esta revista incluye navegación interactiva. Activa JavaScript en el navegador o utiliza la opción de impresión para leer todas las páginas.</p></noscript>
+</body>
+</html>
